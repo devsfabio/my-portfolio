@@ -144,9 +144,11 @@
     <section class="formulario">
       <div class="interface">
         <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-        <form action="">
-          <input type="text" placeholder="Seu nome:" required>
-          <input type="text" placeholder="Seu e-mail:" required>
+        <form id="form">
+          <input type="text" placeholder="Seu nome:" class="required" oninput="nameValidate()">
+          <span class="span-required">Nome dever ter no mínimo 3 caracteres</span>
+          <input type="text" placeholder="Seu e-mail:" class="required" oninput="emailValidate()">
+          <span class="span-required">Digite um email válido</span>
           <input type="text" placeholder="Seu celular">
           <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
           <div class="btn-enviar">

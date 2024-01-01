@@ -285,7 +285,11 @@ section.portfolio .flex {
 section.formulario {
   padding: 80px 4%;
 }
-
+.span-required {
+  display: none;
+  font-size: 14px;
+  color: rgba(248, 64, 64, 0.911);
+}
 form {
   max-width: 500px;
   margin: 0 auto;
