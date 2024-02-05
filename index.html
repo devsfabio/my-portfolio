@@ -142,15 +142,15 @@
     <section class="formulario" id="contato">
       <div class="interface">
         <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-        <form id="form">
-          <input type="text" placeholder="Seu nome:" class="required" oninput="nameValidate()">
+        <form id="form" action="https://formcarry.com/s/jw7ib_yPZPg" method="POST" enctype="multipart/form-data">
+          <input type="text" name="nome" placeholder="Seu nome:" class="required" oninput="nameValidate()">
           <span class="span-required">Nome dever ter no mínimo 3 caracteres</span>
-          <input type="text" placeholder="Seu e-mail:" class="required" oninput="emailValidate()">
+          <input type="email" name="email" placeholder="Seu e-mail:" class="required" oninput="emailValidate()">
           <span class="span-required">Digite um email válido</span>
-          <input type="text" placeholder="Seu celular">
-          <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+          <input type="tel" name="telefone" placeholder="Seu celular">
+          <textarea name="mensagem recebida" id="" placeholder="Sua mensagem" required></textarea>
           <div class="btn-enviar">
-            <input type="submit" value="ENVIAR">
+            <button type="submit">ENVIAR</button>
           </div>
         </form>
       </div>
