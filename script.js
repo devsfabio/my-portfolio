@@ -23,6 +23,22 @@ const emailRegex =
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+
+  const nome = document.querySelector("[name='nome']").value;
+  const email = document.querySelector("[name='email']").value;
+  const mensagem = document.querySelector("[name='mensagem']").value;
+
+  const texto = `📌 *Nova mensagem do portfólio!*\n\n👤 *Nome:* ${nome}\n📧 *E-mail:* ${
+    email || 'Não informado'
+  }\n💬 *Mensagem:* ${mensagem}`;
+
+  const url = `https://wa.me/5511983647344?text=${encodeURIComponent(texto)}`;
+
+  window.open(url, '_blank');
+
+  form.reset();
+  alert('Obrigado! Você será redirecionado ao WhatsApp.');
+
   nameValidate();
   emailValidate();
 });

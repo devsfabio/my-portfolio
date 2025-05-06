@@ -1,186 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>My-Portfolio</title>
+  </head>
 
-  <title>My-Portfolio</title>
-</head>
-
-<body>
-  <header>
-    <div class="interface" id="inicio">
-      <div class="logo">
-        <a href="#inicio">
-          <img src="assets/logo.svg" alt="Logo do Portfolio">
-        </a>
-      </div>
-      <nav class="menu-desktop">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#portfolio">Projetos</a></li>
-        </ul>
-      </nav>
-      <div class="btn-contato">
-        <a href="#contato">
-          <button>Contato</button>
-        </a>
-      </div>
-      <!-- menu mobile -->
-      <div class="btn-abrir" id="btn-menu">
-        <i class="bi bi-list"></i>
-      </div>
-      <div class="menu-mobile" id="menu-mobile">
-        <div class="btn-fechar">
-          <i class="bi bi-x-lg"></i>
+  <body>
+    <header>
+      <div class="interface" id="inicio">
+        <div class="logo">
+          <a href="#inicio">
+            <img src="assets/logo.svg" alt="Logo do Portfolio" />
+          </a>
         </div>
-        <nav>
+        <nav class="menu-desktop">
           <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#portfolio">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
+        <div class="btn-contato">
+          <a href="#contato">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!-- menu mobile -->
+        <div class="btn-abrir" id="btn-menu">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portfolio">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="overlay-menu" id="overlay-menu"></div>
       </div>
-      <div class="overlay-menu" id="overlay-menu"></div>
-    </div>
-  </header>
-  <main>
-    <!-- topo-site -->
-    <section class="topo-site">
-      <div class="interface">
-        <div class="flex">
-          <div class="txt-topo-site">
-            <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-            <p>Se você está buscando alguém apaixonado pelo desenvolvimento web e que está comprometido em crescer profissionalmente, ficaria feliz em conectar e explorar possíveis colaborações. Vamos construir a web do futuro juntos!</p>
+    </header>
+    <main>
+      <!-- topo-site -->
+      <section class="topo-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+              <p>
+                Se você está buscando alguém apaixonado pelo desenvolvimento web
+                e que está comprometido em crescer profissionalmente, ficaria
+                feliz em conectar e explorar possíveis colaborações. Vamos
+                construir a web do futuro juntos!
+              </p>
 
-            <div class="btn-contato">
-              <a href="#contato">
-                <button>Entre em contato</button>
+              <div class="btn-contato">
+                <a href="#contato">
+                  <button>Entre em contato</button>
+                </a>
+              </div>
+            </div>
+            <div class="img-topo-site">
+              <img class="foto" src="assets/perfil2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- especialidades-->
+      <section class="especialidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>HABILIDADES.</span></h2>
+          <div class="flex">
+            <div class="box especialidades-box-html">
+              <img src="assets/html5-fill.svg" alt="" />
+              <h3 class="html">HTML</h3>
+            </div>
+            <div class="box especialidades-box-js">
+              <img src="assets/javascript-fill.svg" alt="" />
+              <h3>Javascript</h3>
+            </div>
+            <div class="box especialidades-box-css">
+              <img src="assets/css3-fill.svg" alt="" />
+              <h3 class="css">CSS</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sobre-->
+      <section class="sobre" id="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-sobre">
+              <h2>MUITO PRAZER, <span>SOU FABIO BARBOSA.</span></h2>
+              <p>
+                Tenho conhecimento sólido em HTML e CSS, e estou atualmente
+                aprofundando meus estudos em JavaScript e React js . Sou
+                apaixonado por desenvolvimento web e estou em busca de
+                oportunidades.
+              </p>
+              <p>
+                Minha jornada no mundo da programação começou com o desejo de
+                criar experiências interativas na web. Desde então, tenho
+                dedicado tempo e esforço para dominar as tecnologias
+                fundamentais necessárias para criar websites atraentes e
+                funcionais.
+              </p>
+              <div class="btn-social">
+                <a href="https://www.instagram.com/"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a href="https://www.linkedin.com/in/fabiobarbosadeveloper/"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href="https://github.com/devsfabio"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio-->
+      <section class="portfolio" id="portfolio">
+        <div class="interface">
+          <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+          <div class="flex">
+            <div
+              class="img-port"
+              style="background-image: url('assets/portatil.png')"
+              ;
+            >
+              <div class="overlay">Projeto Bike</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url('assets/surf-figma.png')"
+              ;
+            >
+              <div class="overlay">Projeto Surfbot</div>
+            </div>
+            <div
+              class="img-port"
+              style="
+                background-image: url('assets/FireShot\ Capture\ 001\ -\ Barber\ style\ -\ projeto-barbearia-xi.vercel.app1.jpg');
+              "
+              ;
+            >
+              <div class="overlay">Projeto Barbearia</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- formulario -->
+      <section class="formulario" id="contato">
+        <div class="interface">
+          <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+          <form
+            id="form"
+            action="https://formsubmit.co/fabiio403@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <input
+              type="text"
+              name="nome"
+              placeholder="Seu nome:"
+              class="required"
+              oninput="nameValidate()"
+            />
+            <span class="span-required"
+              >Nome dever ter no mínimo 3 caracteres</span
+            >
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu e-mail:"
+              class="required"
+              oninput="emailValidate()"
+            />
+            <span class="span-required">Digite um email válido</span>
+            <input type="tel" name="telefone" placeholder="Seu celular" />
+            <textarea
+              name="mensagem"
+              id=""
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <div class="btn-enviar">
+              <button type="submit">ENVIAR</button>
+           
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <a href="#">
+                <img id="#inicio" src="assets/logo.svg" alt="foto-logo" />
               </a>
             </div>
-          </div>
-          <div class="img-topo-site">
-            <img class="foto" src="assets/perfil2.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- especialidades-->
-    <section class="especialidades">
-      <div class="interface">
-        <h2 class="titulo">MINHAS <span>HABILIDADES.</span> </h2>
-        <div class="flex">
-          <div class="box especialidades-box-html">
-            <img src="assets/html5-fill.svg" alt="">
-            <h3 class="html">HTML</h3>
-
-          </div>
-          <div class="box especialidades-box-js">
-            <img src="assets/javascript-fill.svg" alt="">
-            <h3>Javascript</h3>
-
-          </div>
-          <div class="box especialidades-box-css">
-            <img src="assets/css3-fill.svg" alt="">
-            <h3 class="css">CSS</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- sobre-->
-    <section class="sobre" id="sobre">
-      <div class="interface">
-        <div class="flex">
-
-          <div class="txt-sobre">
-            <h2>MUITO PRAZER, <span>SOU FABIO BARBOSA.</span></h2>
-            <p>Tenho conhecimento sólido em HTML e CSS, e estou atualmente aprofundando meus estudos em JavaScript e React js . Sou apaixonado por desenvolvimento web e estou em busca de oportunidades. </p>
-            <p>
-              Minha jornada no mundo da programação começou com o desejo de criar experiências interativas na web. Desde então, tenho dedicado tempo e esforço para dominar as tecnologias fundamentais necessárias para criar websites atraentes e funcionais. </p>
             <div class="btn-social">
-              <a href="https://www.instagram.com/"><button><i class="bi bi-instagram"></i></button></a>
-              <a href="https://www.linkedin.com/in/fabiobarbosadeveloper/"><button><i class="bi bi-linkedin"></i></button></a>
-              <a href="https://github.com/devsfabio"><button><i class="bi bi-github"></i></button></a>
-
+              <a href="https://www.instagram.com/"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+              <a href="https://www.linkedin.com/in/fabiobarbosadeveloper/"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+              <a href="https://github.com/devsfabio"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- portfolio-->
-    <section class="portfolio" id="portfolio">
-      <div class="interface">
-        <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
-        <div class="flex">
-          <div class="img-port" style="background-image: url('assets/portatil.png')" ;>
-            <div class="overlay">Projeto Bike </div>
-          </div>
-          <div class="img-port" style="background-image: url('assets/surf-figma.png')" ;>
-            <div class="overlay">Projeto Surfbot </div>
-          </div>
-          <div class="img-port" style="background-image: url('assets/FireShot\ Capture\ 001\ -\ Barber\ style\ -\ projeto-barbearia-xi.vercel.app1.jpg')" ;>
-            <div class="overlay">Projeto Barbearia </div>
-          </div>
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-fill"></i
+            ><a href="mailto:fabiio403@gmail.com">fabiio403@gmail.com</a>
+          </p>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- formulario -->
-    <section class="formulario" id="contato">
-      <div class="interface">
-        <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-        <form id="form" action="https://formcarry.com/s/jw7ib_yPZPg" method="POST" enctype="multipart/form-data">
-          <input type="text" name="nome" placeholder="Seu nome:" class="required" oninput="nameValidate()">
-          <span class="span-required">Nome dever ter no mínimo 3 caracteres</span>
-          <input type="email" name="email" placeholder="Seu e-mail:" class="required" oninput="emailValidate()">
-          <span class="span-required">Digite um email válido</span>
-          <input type="tel" name="telefone" placeholder="Seu celular">
-          <textarea name="mensagem recebida" id="" placeholder="Sua mensagem" required></textarea>
-          <div class="btn-enviar">
-            <button type="submit">ENVIAR</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-  <!-- footer -->
-  <footer>
-    <div class="interface">
-      <div class="line-footer">
-        <div class="flex">
-          <div class="logo-footer">
-            <a href="#">
-              <img id="#inicio" src="assets/logo.svg" alt="foto-logo">
-            </a>
-          </div>
-          <div class="btn-social">
-            <a href="https://www.instagram.com/"><button><i class="bi bi-instagram"></i></button></a>
-            <a href="https://www.linkedin.com/in/fabiobarbosadeveloper/"><button><i class="bi bi-linkedin"></i></button></a>
-            <a href="https://github.com/devsfabio"><button><i class="bi bi-github"></i></button></a>
-          </div>
-        </div>
-      </div>
-      <div class="line-footer borda">
-        <p><i class="bi bi-envelope-fill"></i><a href="mailto:fabiio403@gmail.com">fabiio403@gmail.com</a></p>
-      </div>
-    </div>
-  </footer>
-
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
